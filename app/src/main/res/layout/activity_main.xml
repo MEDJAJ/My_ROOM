@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Champ pour entrer le nom d'utilisateur -->
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom d'utilisateur"
+        android:inputType="textPersonName"
+        android:padding="10dp"/>
+
+    <!-- Champ pour entrer l'âge -->
+    <EditText
+        android:id="@+id/etUserAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Âge"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Bouton pour ajouter un utilisateur -->
+    <Button
+        android:id="@+id/btnAddUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Utilisateur"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Bouton pour afficher les utilisateurs -->
+    <Button
+        android:id="@+id/btnShowUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afficher les Utilisateurs"
+        android:layout_marginTop="8dp"/>
+
+    <!-- RecyclerView pour afficher la liste des utilisateurs -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
